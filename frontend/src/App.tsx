@@ -6,8 +6,8 @@ import {
   theme,
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
-import { AddDocument } from "./components/AddDocument";
-import { ListAnswers } from "./components/ListDocument";
+import { AddDocument } from "./components/AddFiles";
+import { ListAnswers } from "./components/ListAnswers";
 
 
 export const App = () => {
