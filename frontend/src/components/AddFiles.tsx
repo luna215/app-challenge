@@ -9,6 +9,11 @@ import { useState } from 'react';
 
 interface AddDocumentProps {}
 
+// Define a custom interface that extends HTMLInputAttributes
+interface DirectoryInputAttributes extends React.InputHTMLAttributes<HTMLInputElement> {
+    webkitdirectory?: boolean;
+}
+  
 
 export const AddDocument: React.FC<AddDocumentProps> = () => {
     const [files, setFiles] = useState<FileList | null>(null);
@@ -28,7 +33,14 @@ export const AddDocument: React.FC<AddDocumentProps> = () => {
 
     return (
         <div>
-            <input type="file" multiple onChange={(e) => setFiles(e.target.files)} />
+            <input 
+                type="file" 
+                // @ts-ignore
+                webkitdirectory
+                multiple 
+                onChange={(e) => setFiles(e.target.files)} 
+                
+                />
             <Button
                 mt={4} 
                 colorScheme="purple" 

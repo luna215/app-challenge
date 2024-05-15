@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 var client = axios.create({
-    timeout: 30000,
+    timeout: 300000,
     baseURL: "http://localhost:8000"
 });
 
