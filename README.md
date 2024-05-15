@@ -23,7 +23,9 @@ For the models, it was between BERT or GPT. I wasn't familiar with either but af
 The only part that I had difficulty with is returning a human readable text for our answers. After a bit of research, I couldn't find a quick answer to do this with BERT, so I just decided to return the unprocessed text because that was the closest I could get.
 
 
-
-
 ## Demo
+Before the demo started I uploaded 10 files just to save a bit of time since upload takes quite a bit of time.
+
+https://github.com/luna215/app-challenge/assets/7971405/cea4f5a6-bd59-4fdf-ac54-ca675f66dbbb
+
 
