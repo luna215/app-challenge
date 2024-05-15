@@ -28,11 +28,11 @@ export const DocumentClient = {
         try {
             const response = await client.post(PREFIX + '/ask', { question });
 
-            console.log("Response", response);
-            return response;
+            return response.data;
 
         } catch (error) {
             console.log("Can't answer questions", error)
+            return []
         }
     }
 }

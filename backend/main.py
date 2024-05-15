@@ -6,7 +6,7 @@ from routes import router
 
 
 app = FastAPI(
-    title="Pigeon Slim Version", 
+    title="Infersoft Slim Version", 
     version="0.1.0",
     dependencies=[]
 )

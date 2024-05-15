@@ -59,6 +59,8 @@ async def answer_question(question_request: QuestionRequest):
         document_embeddings = get_document_embeddings()
         similarities = compute_similarity(question_embedding, document_embeddings)
         answers = generate_answers(similarities)
+
+        # TOOD: Parse text to be more human readable
         return answers
     
     except Exception as e:
